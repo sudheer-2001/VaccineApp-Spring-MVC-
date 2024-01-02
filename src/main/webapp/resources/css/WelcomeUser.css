@@ -1,0 +1,186 @@
+@charset "ISO-8859-1";
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	margin: 0;
+	text-align: center;
+	font-weight: bolder;
+	color: tomato;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background-image: linear-gradient(#380036, #0CBABA);
+}
+
+#div1>h1 {
+	text-align: center;
+}
+
+#header {
+	margin-bottom: auto;
+	background: rgba(0, 0, 0, 0.2);
+	/*background-color: #222222;*/
+	min-height: 70px;
+	padding-left: 5%;
+	padding-right: 5%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#footer {
+	margin-top: auto;
+	background: rgba(0, 0, 0, 0.2);
+	min-height: 70px;
+}
+
+#logout {
+	position: relative;
+	background-color: #fff;
+	color: #fff;
+	height: 26px;
+	width: 90px;
+	padding-top: 3px;
+	border-radius: 15px;
+	text-decoration: none;
+}
+
+#logout:hover {
+	background-color: rgba(50, 190, 225, .9);
+	color: #fff;
+}
+
+#headDiv {
+	order: 1;
+}
+
+#addMember {
+	order: -1;
+}
+
+.card-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 2%;
+}
+
+.card {
+	width: 250px;
+	background: #F8F9F1;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+	margin: 50px;
+	border: 2px groove cyan;
+}
+
+.card-content {
+	padding-top: 20px;
+}
+
+.card-content h3 {
+	margin-top: 0px;
+	margin-bottom: auto;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: rgb(63, 121, 230);
+	padding: 10px 7px 0;
+}
+
+.card-content p {
+	color: #666;
+	font-size: 15px;
+	line-height: 1.3;
+}
+
+.card-content .name {
+	font-weight: 600;
+}
+
+
+.card-content .author {
+	margin-top: auto;
+	color: brown;
+	font-weight: 400;
+	font-size: 15px;
+	padding-top: 20px;
+}
+.card-content .author1{
+	margin-top: auto;
+	color: brown;
+	font-weight: 400;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.card-content .heading {
+	font-weight: 600;
+	color:  rgb(88, 87, 87);
+	padding: 7px;
+	font-size: 20px;
+	margin-bottom: 6%;
+}
+.card-content .matter{
+	position: relative;
+	bottom: 5px;
+	font-size: 15px;
+}
+.card-content .slogan{
+	position: relative;
+	bottom:  2px;
+}
+#free{
+	border: 2px ridge cyan;
+	margin: 5% 8%;
+	width: 85%;
+	min-height: 16vh;
+	background: #f0f0f0;
+}
+.logout-button {
+	order: 1; /* This places the button on the right */
+}
+
+.addMember-button {
+	order: -1; /* This places the button on the left */
+}
+
+.img1{
+	height: 165px;
+	width: 207px;
+	position: relative;
+	top: 2px;
+}
+.img2{
+	height: 165px;
+	width: 207px;
+}
+.img3{
+	height: 165px;
+	width: 207px;
+	position: relative;
+	top: 2px;
+}
+
+button {
+	padding: 8px 16px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+marquee{
+	position: relative;
+	bottom: 38px;
+	font-size: 20px;
+	color: #faf605;
+}
+button:hover {
+	background-color: #45a049;
+}

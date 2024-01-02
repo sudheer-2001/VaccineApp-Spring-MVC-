@@ -1,0 +1,285 @@
+@charset "ISO-8859-1";
+*{
+			margin: 0;
+			padding: 0;	
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+		}
+		 
+		 div {
+				color: #5f9ea0;
+			}
+		 header {
+				margin-bottom: auto;
+				text-align:center;
+				background: #212121;
+				height: 50px;
+				width: 100%;
+            	padding-right: 20px;
+			}
+			footer {
+				margin-top: auto;
+            height: 50px;
+            bottom: 0;
+            width: 100%;
+            background: #212121;
+            color: #fff;
+            text-align: center;
+			}
+			.for-padding {
+				padding-left: 5%;
+			    padding-right: 5%;
+			}
+		 .form {
+			  display: flex;
+			  align-items: center;
+			  justify-content: center;
+			  flex-direction: column;
+			  position: relative;
+			  width: 460px;
+			  padding: 50px;
+			  height: 400px;
+			  margin-left: 40px;
+			  border: 1px groove #00c8d0;
+			  background: transparent;
+			  backdrop-filter: blur(120px);
+			  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+			  border-radius: 10px;
+			  
+		}
+.login {
+  width: 100%;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  padding-left: 30px;
+  margin-bottom: 5%;
+  
+}
+
+.inputContainer {
+  background-color: rgba(255, 0, 0, 0);
+  width: 100%;
+  height: 180px;
+}
+.fInput {
+  width: 80%;
+  height: 40px;	
+  margin-top: 2%;
+  margin-left: 8%;
+  margin-bottom: 5%;
+  border-radius: 3px;
+  padding: 8px;
+  font-weight: bolder;
+  border: 1px solid rgb(48, 45, 45);
+  background-color: rgba(0,21,44,255);
+  color: #05f7f7;
+  transition: .1s;
+  display: flex;
+  flex-direction: column;
+}
+
+.fInput:focus {
+  border: 1px rgb(0, 136, 255) solid;
+  outline: none;
+}
+
+.fInput:focus::placeholder {
+  color: rgb(0, 136, 255);
+}
+
+.fInput.email {
+  z-index: 1;
+}
+
+.fInput.pass:focus {
+  z-index: 2;
+}
+
+@keyframes btn-anim5 {
+            0% {
+                left: -100%;
+            }
+
+            50%, 100% {
+                left: 100%;
+            }
+        }
+
+        @keyframes btn-anim6 {
+            0% {
+                top: -100%;
+            }
+
+            50%, 100% {
+                top: 100%;
+            }
+        }
+
+        @keyframes btn-anim7 {
+            0% {
+                right: -100%;
+            }
+
+            50%, 100% {
+                right: 100%;
+            }
+        }
+
+        @keyframes btn-anim8 {
+            0% {
+                bottom: -100%;
+            }
+
+            50%, 100% {
+                bottom: 100%;
+            }
+        }
+        .span5 {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #fff);
+            animation: btn-anim5 1.5s linear infinite;
+        }
+
+        .span6 {
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, #fff);
+            animation: btn-anim6 1.5s linear infinite;
+            animation-delay: .375s;
+        }
+
+        .span7 {
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, #fff);
+            
+            animation: btn-anim7 1.5s linear infinite;
+            animation-delay: .75s;
+        }
+
+        .span8 {
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, #fff);
+            animation: btn-anim8 1.5s linear infinite;
+            animation-delay: 1.125s;
+        }
+        .button-container span {
+        	border-radius: 10px; 
+       position: absolute;
+      background: linear-gradient(transparent, #00d2ff);
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      
+    }
+
+.button-container {
+      position: relative;
+      width: 81%; /* Adjust width as needed */
+      height: 40px; /* Adjust height as needed */
+      margin-left: 8%;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+.submit {
+       width: 100%;
+      height: 40px;
+      padding: 0;
+      border-radius: 10px; /* Your existing border-radius */
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+.submit:focus + .email {
+  display: none;
+}
+
+.submit:hover {
+  opacity: .9;
+animation: changeBorderRadius 1s infinite;
+}
+.submit:hover {
+    animation: changeBorderRadius 1s infinite; /* Adjust animation duration and iteration count */
+  }
+
+.forget {
+      width: 100%;
+      text-align: center;
+      width: 81%;
+      height: 40px;
+      background-color: transparent;
+      text-decoration: none;
+      color: #d1fdff;
+      padding-top: 8px;
+      border: 1px solid rgb(48, 45, 45);
+      cursor: pointer;
+      border-radius: 20px; 
+      margin-right: 3%;
+      transition: background-color 0.1s ease; /* Smooth transition on hover */
+    }
+
+     
+
+    .forget:hover {
+      background-color: rgba(255, 255, 255, 0.151);
+    }
+
+
+.con {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 6%;
+  margin-left: 19%;
+  color: rgb(111, 103, 103);
+  font-size: 18px;
+  font-family: sans-serif;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.con a {
+	text-decoration: none;
+  color: rgb(0, 136, 255);
+}
+
+.form::before,
+        .form::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #fff; 
+            transition: width 0.5s ease;
+        }
+
+        .form::before {
+            top: 0;
+            left: 0;
+        }
+
+        .form::after {
+            bottom: 0;
+            right: 0;
+        }
+
+        .form:hover::before,
+        .form:hover::after {
+            width: 100%; /* Width to animate to */
+        }
+	body>p{
+		color: #fff;
+		padding: 20px;
+	}

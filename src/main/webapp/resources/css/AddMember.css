@@ -1,0 +1,328 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+
+
+
+#header{
+	padding-left: 4%;
+	padding-right: 4%;
+	background: rgba(140, 0, 150, 0.1);
+	margin-bottom: auto; 
+	min-height : 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#footer{
+	background: rgba(140, 0, 150, 0.1);
+	min-height: 55px;
+	margin-top: auto;
+}
+
+.wrapper{
+	 /*flex: 1; Fill remaining vertical space */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-bottom: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0%;
+	margin-bottom: 3%;
+	width: 400px;
+	max-height: 590px;
+	background: transparent;
+	backdrop-filter: blur(100px);
+	/*background: #000;*/
+	box-shadow: 0 0 10px #ecccb4;
+	border-radius: 20px;
+	padding: 10px;
+	overflow: hidden;
+}
+
+@keyframes animate {
+  100%{
+  	filter: hue-rotate(360deg);
+  }
+}
+@keyframes border-pulse {
+  0% {
+    box-shadow: 0 0 0 0px #03f40f;
+  }
+  50% {
+    box-shadow: 0 0 0 4px #03f40f; /* Adjust the width of the "border" here */
+  }
+  100% {
+    box-shadow: 0 0 0 0px #03f40f;
+  }
+}
+
+.wrapper:hover {
+  animation: animate 50s linear infinite;
+}
+
+
+.form-wrapper{
+	justify-content: center;
+	align-items: center;
+}
+
+h2{
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+}
+h2>p{
+	position: relative;
+	bottom: 15px;
+	padding-bottom: 10px;
+}
+.input-field{
+	position: relative;
+	margin: 30px 0;
+	border-bottom: 2px solid #fff;
+}
+
+.input-field1{
+	color: #51f1fc;
+	position: relative;
+	margin: 30px 0;
+	border-bottom: 2px solid #fff;
+}
+
+.input-field>input[placeholder]{
+	color: #51f1fc;
+}
+
+.input-field label{
+	position: absolute;
+	top : 50%;
+	left: 5px;
+	transform: translateY(-50%);
+	font-size: 16px;
+	color: #d0f5da;
+	pointer-events: none;
+}
+
+.input-field1 label{
+	transform: translateY(-50%);
+	font-size: 16px;
+	color: #d0f5da;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.input-field1 input{
+	font-size: 16px;
+	color: #d0f5da;
+	background: transparent;
+	border: none;
+	outline: none;
+}
+
+.input-field1 input:focus~label,.input-field1 input:valid~label{
+	top: -5px;
+}
+.input-field input{
+	font-size: 16px;
+	color: navy;
+	padding: 0 5px;
+	background: transparent;
+	border: none;
+	outline: none;
+}
+.input-field1>select{
+	color: grey;
+	width: 120px;
+	margin-left: 20px;
+}
+input[type="date"]{
+	color: navy;
+	background: #FFFFFF;
+	width: 138px;
+	margin-left: 98px;
+	height: 22px
+}
+select[name="idProof"]{
+	background: #FFFFFF;
+	color: navy;
+	margin-left: 69px;
+	height: 22px
+}
+select[name="vaccineType"]{
+	background: #FFFFFF;
+	color: navy;
+	height: 22px;
+	margin-left:20px;
+	width: 142px;
+}
+select[name="dose"]{
+	background: #FFFFFF;
+	color: navy;
+	margin-left: 88px;
+	height: 22px
+}
+option{
+	text-align: center;
+	color: navy;
+}
+input[type="radio"]{
+	color: #d0f5da;
+}
+#addButton {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background: #0ef;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  padding: 0;
+  animation: border-pulse 2s linear infinite;
+}
+
+::placeholder {
+  color: #d0f5da;
+  opacity: 0.9;
+}
+
+input:focus{
+	font-weight: bolder;
+}
+#result>h1 {
+	align-items: center;
+	justify-content: center;
+	border: none;
+	outline: none;
+	border-radius: 40px;
+	font-size: 26px;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	padding: 40px 45px 68px 20px;
+	height: 2vh;
+	text-align: center;
+}
+#home{
+	width: 60px;
+	height: 22px;
+}
+#view{
+	height: 24px;
+	padding-left :10px;
+	padding-right: 10px;
+}
+.viewMembers-button {
+		      order: -1; /* This places the button on the left */
+		    }
+		    
+		    button {
+		      background-color: #4CAF50;
+		      color: white;
+		      border: none;
+		      border-radius: 4px;
+		      cursor: pointer;
+		    }
+		   
+		    button:hover {
+		      background-color: #45a049;
+		    }
+		    b {
+		    	color:tomato;
+		    }
+		    #edit {
+	background-color: #d1fff6;
+}
+td{
+	color: #06020f;
+	padding : 8px;
+}
+
+#edit a {
+	color: #2b052b;
+}
+
+#table2 .six {
+	background-color: navy;
+}
+
+#table2 {
+	margin: auto;
+	text-align: center;
+	margin-bottom: 1%;
+}
+
+#tr21 {
+
+	height: 35px;
+	width: 600px;
+}
+
+#tr22 {
+	font-size: 18px;
+	height: 30px;
+	width: 600px;
+	color: navy;
+}
+
+#tr21>.one {
+	width: 35px;
+}
+			.cb {
+	            background: none;
+	            border: none;
+	            color: blue;
+	            text-decoration: underline;
+	            cursor: pointer;
+	            display: inline-block;
+	            padding: 1px 10px;
+	            background-color: #007bff;
+	            color: #fff;
+	            text-decoration: none;
+	            border: none;
+	            cursor: pointer;
+	            font-weight: bold;
+	            border-radius: 5px;  
+			}
+			.del-button {
+	            display: inline-block;
+	            padding: 1px 8px;
+	            background-color: red;
+	            color: #fff;
+	            text-decoration: none;
+	            border: none;
+	            cursor: pointer;
+	            font-weight: bold;
+	            border-radius: 5px;
+	        }
+#table2 th {
+	color: white;
+}
+			 tr:nth-child(even) {
+	        	background-color: #d5f0ee;
+	        	animation: animate 50s linear infinite;
+	      	}
+	    	tr {
+	    		min-height: 5%;
+	        	background-color: #ede9f7;
+	    		backdrop-filter: blur(20px);
+	    		animation: animate 50s linear infinite;
+	    	}
+			th {
+				padding:5px;
+				color : yellow;
+				font-weight:bold;
+				font-size:larger;
+				background-color: #000000;
+				border-color: #FFFF00;
+			}
