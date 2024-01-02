@@ -15,9 +15,9 @@ body {
 	flex-direction: column;
 	margin: 0;
 	color: #fff;
-	justify-content: center; /* Align content vertically */
-	align-items: center; /* Align content horizontally */
-	text-align: center; /* Center align text */
+	justify-content: center; 
+	align-items: center;
+	text-align: center; 
 }
 
 
@@ -94,7 +94,7 @@ p>a:hover {
 	border-radius: 20px;
 	margin-top: 20px;
 	padding: 10px;
-	text-align: left; /* Adjusted text alignment */
+	text-align: left; 
 }
 
 .highlights-bar li {
@@ -178,8 +178,8 @@ p>a:hover {
 }
 
 .scroll img {
-	border-radius: 500px; /* Makes the image round */
-	padding: 15px; /* Optional: Add padding to the image */
+	border-radius: 500px;
+	padding: 15px; 
 	height: 100px;
 	width: 100px;
 }
