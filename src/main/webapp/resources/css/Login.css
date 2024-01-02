@@ -1,52 +1,35 @@
 @charset "ISO-8859-1";
 *{
-			margin: 0;
-			padding: 0;	
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-		}
+	margin: 0;
+	padding: 0;	
+        box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
 		 
-		 div {
-				color: #5f9ea0;
-			}
-		 header {
-				margin-bottom: auto;
-				text-align:center;
-				background: #212121;
-				height: 50px;
-				width: 100%;
-            	padding-right: 20px;
-			}
-			footer {
-				margin-top: auto;
-            height: 50px;
-            bottom: 0;
-            width: 100%;
-            background: #212121;
-            color: #fff;
-            text-align: center;
-			}
-			.for-padding {
-				padding-left: 5%;
-			    padding-right: 5%;
-			}
-		 .form {
-			  display: flex;
-			  align-items: center;
-			  justify-content: center;
-			  flex-direction: column;
-			  position: relative;
-			  width: 460px;
-			  padding: 50px;
-			  height: 400px;
-			  margin-left: 40px;
-			  border: 1px groove #00c8d0;
-			  background: transparent;
-			  backdrop-filter: blur(120px);
-			  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
-			  border-radius: 10px;
-			  
-		}
+div {
+	color: #5f9ea0;
+}
+		 
+.for-padding {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	width: 460px;
+	padding: 50px;
+	height: 400px;
+	 margin-left: 40px;
+	 border: 1px groove #00c8d0;
+	 background: transparent;
+	backdrop-filter: blur(120px);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+	 border-radius: 10px;	  
+}
 .login {
   width: 100%;
   color: white;
