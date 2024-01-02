@@ -10,6 +10,25 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="resources/css/index.css">
 <!-- Add Font Awesome for icons -->
+<style>
+#header {
+	background-color: rgba(0, 0, 0, 0.3);
+	min-height: 70px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0 20px;
+	width: 100%;
+	margin-bottom: auto;
+}
+
+#footer {
+	margin-top: auto;
+	background: rgba(0, 0, 0, 0.7);
+	height: 60px;
+	width: 100%;
+}
+</style>
 </head>
 <body>
 	<header id="header">
@@ -21,8 +40,7 @@
 
 	<marquee class="scroll">
 		<img id="scrollImg" src="resources/images/Tap.png" alt="Tap Academy"
-			style="height: 60px; width: 100px;">'s Vaccination Drive
-		Portal
+			style="height: 60px; width: 100px;">'s Vaccination Drive Portal
 	</marquee>
 	<p>
 		To see the Statistic of Covid - 19 <a
@@ -71,6 +89,12 @@
 	</div>
 
 
-	<footer id="footer"></footer>
+	<footer id="footer">
+		<div class=for-padding>
+			<p class="signature">
+				Sincerely, <br> TAP ACADEMY Management
+			</p>
+		</div>
+	</footer>
 </body>
 </html>
