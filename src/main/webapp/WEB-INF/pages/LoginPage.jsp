@@ -20,6 +20,23 @@
 		 	background-position: center; 
   			background-repeat: no-repeat;
 		 }
+		 header {
+				margin-bottom: auto;
+				text-align:center;
+				background: rgba(0, 0, 0, 0.3);
+				height: 50px;
+				width: 100%;
+            	padding-right: 20px;
+			}
+			footer {
+				margin-top: auto;
+            height: 50px;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            color: #fff;
+            text-align: center;
+			}
 </style>
 </head>
 <body>
